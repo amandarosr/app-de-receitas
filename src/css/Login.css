@@ -43,7 +43,7 @@ button {
   justify-content: center;
   position: relative;
   z-index: 1;
-  margin-top: -50px;
+  margin-top: -30px;
   top: 200px;
   right: 125px;
   transform: rotate(-7deg);
@@ -53,11 +53,17 @@ button {
 .title {
   align-items: center;
   display: flex;
+  flex-direction: column;
+}
+
+.title img {
+  height: 80px;
+  margin: 0 0 -60px -20px;
 }
 
 .title h1 {
   font-family: AlexBrush, sans-serif;
-  font-size: 160px;
+  font-size: 150px;
   font-weight: 600;
   text-shadow: 1px 3px 3px #cbbca2;
   transform: rotate(-2deg);
@@ -65,9 +71,9 @@ button {
 
 .subtitle {
   font-family: AlexBrush, sans-serif;
-  font-size: 90px;
-  padding-left: 220px;
-  padding-top: 100px;
+  font-size: 80px;
+  padding-left: 200px;
+  padding-top: 135px;
   position: absolute;
   transform: rotate(-3deg);
 }
@@ -138,7 +144,7 @@ button {
 }
 
 .footer-login {
-  background-color: var(--darkerRed);
+  background-color: #D28C52;
   color: white;
   bottom: 0;
   font-size: 15px;

@@ -1,7 +1,7 @@
 import React, { useCallback, useContext, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom/cjs/react-router-dom.min";
 import CardRecipe from "../components/CardRecipe";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import Header from "../components/Header";
 import RecipeContext from "../context/RecipeContext";
 import "../css/Recipes.css";
@@ -84,7 +84,7 @@ export default function Recipes() {
             </Link>
           ))}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
