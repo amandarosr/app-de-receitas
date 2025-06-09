@@ -65,11 +65,11 @@ export default function Header() {
         </div>
       </header>
       <section className="header__search">
-        <div className="page__title">
+        {/* <div className="page__title">
           { path === '/meals' && <img src={ MealIcon } alt="meal-icon" /> }
           { path === '/drinks' && <img src={ DrinkIcon } alt="meal-icon" />}
           <h1 data-testid="page-title">{pageTitle}</h1>
-        </div>
+        </div> */}
         { showBar && <SearchBar /> }
       </section>
     </>

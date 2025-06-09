@@ -7,7 +7,7 @@
 
 header {
   backdrop-filter: blur(5px);
-  background-color: var(--titleColor);
+  /* background-color: var(--titleColor); */
   border-radius: 0 0 20px 20px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   color: var(--lightBeige);
@@ -15,6 +15,11 @@ header {
   justify-content: space-between;
   padding: 0 20px 5px 15px;
   width: 80%;
+}
+
+header:hover {
+  /* background-color: var(--titleColor); */
+  background-color: #D28C52;
 }
 
 .header__title {

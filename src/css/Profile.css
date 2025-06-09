@@ -1,21 +1,8 @@
 .profile__page {
   align-items: center;
-  background: repeating-linear-gradient(
-      to top left,
-      transparent,
-      transparent 5em,
-      rgba(168, 113, 74, 0.2) 5em,
-      rgba(168, 113, 74, 0.2) 10em
-    ),
-    repeating-linear-gradient(
-      to top right,
-      transparent,
-      transparent 5em,
-      rgba(168, 113, 74, 0.2) 5em,
-      rgba(168, 113, 74, 0.2) 10em
-    ),
-    #ebddc4;
-  background-blend-mode: multiply;
+  background-image: url("../css/images/torn-beige-paper2.jpg");
+  background-size: cover;
+  background-position-y: 100%;
   display: flex;
   flex-direction: column;
   height: 100vh;
