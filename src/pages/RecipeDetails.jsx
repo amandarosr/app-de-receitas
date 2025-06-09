@@ -43,7 +43,6 @@ export default function RecipeDetails() {
     <div className="details__page">
       <div className="mobile-container">
         <span className="top-btns-container">
-          <img src={ PushPin } alt="pin" className="push-pin" />
           <ButtonFavorite />
           <ButtonShare testid="share-btn" />
         </span>
