@@ -59,15 +59,14 @@ export default function SearchBar() {
           />
           Name
         </label>
+        <button
+          data-testid="exec-search-btn"
+          onClick={searchRecipe}
+          className="button__search"
+        >
+          Search
+        </button>
       </div>
-
-      <button
-        data-testid="exec-search-btn"
-        onClick={searchRecipe}
-        className="button__search"
-      >
-        Search
-      </button>
     </div>
   );
 }

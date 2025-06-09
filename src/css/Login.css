@@ -5,10 +5,6 @@
   --darkBeige: rgba(168, 113, 74, 0.2);
 }
 
-button {
-  background-color: var(--titleColor);
-}
-
 .login__page {
   align-items: center;
   background: repeating-linear-gradient(
