@@ -1,5 +1,5 @@
 .done__page {
-  background-image: url('../css/images/backgroundDetails.jpg');
+  /* background-image: url('../css/images/backgroundDetails.jpg'); */
   background-size: contain;
   display: flex;
   flex-direction: column;

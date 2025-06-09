@@ -25,9 +25,10 @@ export default function Footer() {
           className="material-symbols-outlined footer-icon"
           onClick={ () => history.push('/drinks') }
           src={ drinkIcon }
+          disabled
         >
           local_bar
-          <span className="footer-text">Drinks</span>
+          <span className="footer-text">Drinks (Coming Soon!)</span>
         </button>
       </div>
     </footer>

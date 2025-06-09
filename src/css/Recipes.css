@@ -1,7 +1,5 @@
 .recipes__page {
-  background-image: url('../css/images/backgroundRecipes.jpg');
-  height: 100%;
-  width: 100%;
+  background-image: url('../css/images/test1.jpg');
 }
 
 button {
@@ -24,7 +22,7 @@ button {
 
 .category_button {
   margin: 3px;
-  min-width: 90px;
+  /* min-width: 90px; */
   padding: 5px 10px;
 }
 

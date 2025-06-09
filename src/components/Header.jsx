@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 import SearchBar from './SearchBar';
-// import iconMeals from '../css/images/iconMeals.png';
 import iconTitleHeader from '../css/images/iconTitleHeader.png';
 import ProfileIcon from '../css/images/profile.png';
 import SearchIcon from '../css/images/search.png';

@@ -7,7 +7,6 @@ import { getRecipesId } from '../services/fetchAPI';
 import IngredientCheckbox from './IngredientCheckbox';
 import Tape from '../css/images/tape2.png';
 import Bulb from '../css/images/doodles/bulb.png';
-import Laptop from '../css/images/doodles/laptop.png';
 import VideoBorder from '../css/images/video-border.png';
 
 export default function CardRecipeDetails() {
@@ -72,7 +71,7 @@ export default function CardRecipeDetails() {
           </div>
           <div className="section-two">
             <img src={ Bulb } alt="sticker" className="bulb-icon" />
-            <ol className="ingredients-container">
+            <ul className="ingredients-container">
               { listIngredients && listIngredients
                 .map((ingrediente, index) => (
                   pathname.includes('in-progress')
@@ -91,7 +90,7 @@ export default function CardRecipeDetails() {
                       </li>
                     )
                 )) }
-            </ol>
+            </ul>
           </div>
         </div>
       )}
@@ -106,7 +105,6 @@ export default function CardRecipeDetails() {
               url={ recipe.strYoutube }
             />
             <img src={ VideoBorder } className="video-border" alt="border" />
-            <img src={ Laptop } alt="laptop icon" className="laptop" />
           </div>
         )
       }

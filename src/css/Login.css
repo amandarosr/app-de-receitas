@@ -1,86 +1,89 @@
 :root {
-
-  --titleColor: #cf1414;
+  --titleColor: brown;
+  --darkerRed: #4a1a1a;
+  --lightBeige: #ebddc4;
+  --darkBeige: rgba(168, 113, 74, 0.2);
 }
 
+button {
+  background-color: var(--titleColor);
+}
 
 .login__page {
   align-items: center;
-  background-image: url('./images/background5.jpg');
-  background-size: 100%;
+  background: repeating-linear-gradient(
+      to top left,
+      transparent,
+      transparent 5em,
+      rgba(168, 113, 74, 0.2) 5em,
+      rgba(168, 113, 74, 0.2) 10em
+    ),
+    repeating-linear-gradient(
+      to top right,
+      transparent,
+      transparent 5em,
+      rgba(168, 113, 74, 0.2) 5em,
+      rgba(168, 113, 74, 0.2) 10em
+    ),
+    #ebddc4;
+  background-blend-mode: multiply;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  justify-content: center;
-  margin-bottom: 100px;
-  opacity: 0.9;
-  width: 100vw;
-}
-
-.login__container {
+  justify-content: flex-start;
   align-items: center;
-  backdrop-filter: blur(5px);
-  background-color: rgba(225, 225, 225, 0.8);
-  border-radius: 10px;
-  box-shadow: 0 0 25px rgba(121, 121, 121, 0.4) , 0 20px 40px rgba(129, 129, 129, 0.4);
-  display: flex;
-  flex-direction: column;
-  height: 350px;
-  justify-content: space-evenly;
-  padding-bottom: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 310px;
+  height: 100vh;
+  opacity: 0.9;
 }
 
 .login__title {
   align-items: center;
-  border-radius: 50%;
   color: var(--titleColor);
   display: flex;
   flex-direction: column;
-  height: 120px;
   justify-content: center;
-  width: 170px;
+  position: relative;
+  z-index: 1;
+  margin-top: -50px;
+  top: 200px;
+  right: 125px;
+  transform: rotate(-7deg);
+  height: 120px;
 }
 
 .title {
   align-items: center;
   display: flex;
-  margin-right: 20px;
-}
-
-.title img {
-  position: relative;
-  top: -3px;
 }
 
 .title h1 {
-  font-family: AlexBrush , sans-serif;
-  font-size: 60px;
+  font-family: AlexBrush, sans-serif;
+  font-size: 160px;
   font-weight: 600;
-  text-shadow: 1px 2px 2px white;
+  text-shadow: 1px 3px 3px #cbbca2;
   transform: rotate(-2deg);
 }
 
 .subtitle {
-  font-family: AlexBrush , sans-serif;
-  font-size: 38px;
-  padding-left: 120px;
-  padding-top: 40px;
+  font-family: AlexBrush, sans-serif;
+  font-size: 90px;
+  padding-left: 220px;
+  padding-top: 100px;
   position: absolute;
   transform: rotate(-3deg);
 }
 
-.login__title h1, h3 {
-  margin: 0;
-  margin-bottom: 0;
-  padding: 0;
-}
-
-.login__title img {
-  margin-right: 3px;
-  width: 50px;
+.login__container {
+  align-items: center;
+  background-image: url("../css/images/postit-login.webp");background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: rotate(-5deg);
+  margin-left: -50px;
+  height: 80%;
+  width: 70%;
 }
 
 .login__input {
@@ -88,17 +91,19 @@
   display: flex;
   flex-direction: column;
   font-size: 18px;
+  transform: rotate(7deg);
   height: 40%;
-  justify-content: space-between;
-  width: 100%;
+  margin-top: 120px;
 }
 
 .login__input input {
   border: none;
-  border-radius: 10px;
-  box-shadow: 2px 2px rgb(188, 188, 188);
-  text-align: center;
-  width: 80%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 20px;
+  padding-left: 20px;
+  height: 50px;
+  width: 300px;
+  margin: 5px 0;
 }
 
 .login__input input:focus {
@@ -108,14 +113,15 @@
 .login__button {
   background-color: var(--titleColor);
   border: none;
-  border-radius: 10px;
-  box-shadow: 2px 2px rgb(188, 188, 188);
+  border-radius: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   color: #e8e8e8;
+  font-size: 25px;
   font-weight: 700;
-  height: 40px;
+  height: 50px;
   margin-top: 15px;
   padding: 4px;
-  width: 80%;
+  width: 200px;
 }
 
 .login__button:hover {
@@ -132,12 +138,11 @@
 }
 
 .footer-login {
-  background-color: #d6ab36;
+  background-color: var(--darkerRed);
+  color: white;
   bottom: 0;
-  color: rgb(66, 35, 35);
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 600;
-  height: 22px;
   left: 0;
   margin-top: 1rem;
   padding-top: 3px;

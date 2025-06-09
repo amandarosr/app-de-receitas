@@ -1,5 +1,5 @@
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import React, { useCallback, useContext, useEffect } from 'react';
+import { useCallback, useContext, useEffect } from 'react';
 import {
   useHistory,
   useLocation, useParams,
@@ -7,7 +7,6 @@ import {
 import ButtonFavorite from '../components/ButtonFavorite';
 import ButtonShare from '../components/ButtonShare';
 import CardRecipeDetails from '../components/CardRecipeDetails';
-// import Carrousel from '../components/Carrousel';
 import RecipeContext from '../context/RecipeContext';
 import '../css/RecipeDetails.css';
 import { fetchDrinks, fetchMeals } from '../services/fetchAPI';
@@ -49,7 +48,6 @@ export default function RecipeDetails() {
           <ButtonShare testid="share-btn" />
         </span>
         <CardRecipeDetails />
-        {/* <Carrousel /> */}
         <button
           data-testid="start-recipe-btn"
           type="button"
