@@ -7,7 +7,7 @@ import {
 import ButtonFavorite from '../components/ButtonFavorite';
 import ButtonShare from '../components/ButtonShare';
 import CardRecipeDetails from '../components/CardRecipeDetails';
-import Carrousel from '../components/Carrousel';
+// import Carrousel from '../components/Carrousel';
 import RecipeContext from '../context/RecipeContext';
 import '../css/RecipeDetails.css';
 import { fetchDrinks, fetchMeals } from '../services/fetchAPI';
@@ -49,7 +49,7 @@ export default function RecipeDetails() {
           <ButtonShare testid="share-btn" />
         </span>
         <CardRecipeDetails />
-        <Carrousel />
+        {/* <Carrousel /> */}
         <button
           data-testid="start-recipe-btn"
           type="button"
