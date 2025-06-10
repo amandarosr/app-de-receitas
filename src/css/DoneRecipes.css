@@ -1,12 +1,11 @@
 .done__page {
   background-image: url("../css/images/torn-beige-paper2.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position-y: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
-
-/* .done__page h1:nth-child( 1 ) {
-  backdrop-filter: blur(1px);
-} */

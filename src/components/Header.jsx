@@ -5,8 +5,6 @@ import SearchBar from './SearchBar';
 import iconTitleHeader from '../css/images/platterBeige.png';
 import ProfileIcon from '../css/images/profile.png';
 import SearchIcon from '../css/images/search.png';
-import MealIcon from '../css/images/meal.png';
-import DrinkIcon from '../css/images/drink.png';
 import Search from '../images/searchIcon.svg';
 import Profile from '../images/profileIcon.svg';
 import '../css/Header.css';
@@ -17,19 +15,19 @@ export default function Header() {
   const location = useLocation();
   const path = location.pathname;
   const pathSearch = path === '/meals' || path === '/drinks';
-  let pageTitle = '';
+  // let pageTitle = '';
 
-  if (path === '/meals') {
-    pageTitle = 'Meals';
-  } else if (path === '/drinks') {
-    pageTitle = 'Drinks';
-  } else if (path === '/profile') {
-    pageTitle = 'Profile';
-  } else if (path === '/done-recipes') {
-    pageTitle = 'Done Recipes';
-  } else if (path === '/favorite-recipes') {
-    pageTitle = 'Favorite Recipes';
-  }
+  // if (path === '/meals') {
+  //   pageTitle = 'Meals';
+  // } else if (path === '/drinks') {
+  //   pageTitle = 'Drinks';
+  // } else if (path === '/profile') {
+  //   pageTitle = 'Profile';
+  // } else if (path === '/done-recipes') {
+  //   pageTitle = 'Done Recipes';
+  // } else if (path === '/favorite-recipes') {
+  //   pageTitle = 'Favorite Recipes';
+  // }
 
   return (
     <>

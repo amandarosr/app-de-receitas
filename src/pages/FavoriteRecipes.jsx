@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CardDoneAndFavorite from '../components/CardDoneAndFavorite';
-import FiltersDoneAndFavorite from '../components/FiltersDoneAndFavorite';
+// import FiltersDoneAndFavorite from '../components/FiltersDoneAndFavorite';
 import Header from '../components/Header';
 import '../css/FavoriteRecipes.css';
 import '../css/CardDoneAndFavorite.css';
@@ -24,7 +24,7 @@ export default function FavoriteRecipes() {
   return (
     <div className="favorites__page">
       <Header />
-      <FiltersDoneAndFavorite setState={ setFavoriteRecipes } />
+      {/* <FiltersDoneAndFavorite setState={ setFavoriteRecipes } /> */}
       { favoriteRecipes && favoriteRecipes.map((favoriteRecipe, index) => (
         <div key={ index } className="card__done__favorite">
           <CardDoneAndFavorite

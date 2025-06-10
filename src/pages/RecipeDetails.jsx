@@ -10,7 +10,6 @@ import CardRecipeDetails from '../components/CardRecipeDetails';
 import RecipeContext from '../context/RecipeContext';
 import '../css/RecipeDetails.css';
 import { fetchDrinks, fetchMeals } from '../services/fetchAPI';
-import PushPin from '../css/images/doodles/push-pins.png';
 
 export default function RecipeDetails() {
   const { setRecomended } = useContext(RecipeContext);
