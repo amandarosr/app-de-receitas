@@ -20,6 +20,10 @@ header:hover {
   background-color: #D28C52;
 }
 
+header button {
+  padding: 5px;
+}
+
 .header__title {
   align-items: center;
   border-radius: 50%;
