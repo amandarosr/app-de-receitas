@@ -160,4 +160,9 @@ header button:hover {
   header {
     width: 100%;
   }
+  
+  .checkbox__container {
+    font-size: 20px;
+    width: 90%;
+  }
 }
