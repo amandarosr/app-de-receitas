@@ -11,34 +11,26 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 50%;
+  margin-left: -100px;
   text-align: center;
 }
 
 .top-btns-container {
   display: flex;
   flex-direction: row;
-  margin-left: 20px;
-  margin-top: 10px;
-}
-
-/* .carousel-container {
-  margin-left: 10px;
-  position: relative;
-  top: -230px;
-} */
-
-.card-slider {
-  background: #f8f3e8;
-  bottom: 65px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2) , 0 0 40px rgba(0, 0, 0, 0.2);
-  height: 230px;
-  padding: 15px;
-  padding-bottom: 40px;
+  margin: 20px
 }
 
 .start {
   bottom: 15px;
   position: fixed;
   z-index: 2;
+}
+
+@media (max-width: 850px) {
+  .mobile-container {
+    width: 80%;
+    margin: 0;
+  }
 }
