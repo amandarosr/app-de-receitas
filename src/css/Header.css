@@ -17,11 +17,19 @@ header {
 }
 
 header:hover {
-  background-color: #D28C52;
+  background-color: rgb(210, 140, 82, 0.8);
 }
 
 header button {
+  background: none;
+  box-shadow: none;
+  margin: 0 5px;
   padding: 5px;
+}
+
+header button:hover {
+  background-color: transparent;
+  height: 36px;
 }
 
 .header__title {
@@ -114,12 +122,15 @@ header button {
 
 .input__search {
   background-color: #FFFCF5;
+  color: rgb(86, 86, 86);
   border: none;
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  padding-left: 10px;
-  font-size: 20px;
-  width: 400px;
+  padding-left: 15px;
+  font-size: 18px;
+  margin: 0 35px 10px;
+  height: 40px;
+  width: 350px;
 }
 
 .input__search:focus {

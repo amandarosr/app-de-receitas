@@ -10,6 +10,7 @@ import CardRecipeDetails from '../components/CardRecipeDetails';
 import RecipeContext from '../context/RecipeContext';
 import '../css/RecipeDetails.css';
 import { fetchDrinks, fetchMeals } from '../services/fetchAPI';
+import home from "../images/home.png"
 
 export default function RecipeDetails() {
   const { setRecomended } = useContext(RecipeContext);
@@ -42,6 +43,9 @@ export default function RecipeDetails() {
     <div className="details__page">
       <div className="mobile-container">
         <span className="top-btns-container">
+          <button onClick={() => history.push("/meals")}>
+            <img src={home} alt="homepage" className="homeBtn"/>
+          </button>
           <ButtonFavorite />
           <ButtonShare testid="share-btn" />
         </span>

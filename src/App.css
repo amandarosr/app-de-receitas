@@ -1,9 +1,9 @@
 @font-face {
-  font-family: TestFont;
+  font-family: SERMO;
   src: url("./images/SERMORegular.ttf");
 }
 
 * {
-  font-family: TestFont;
+  font-family: SERMO;
   font-weight: 600;
 }

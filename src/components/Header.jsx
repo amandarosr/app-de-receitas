@@ -8,26 +8,15 @@ import SearchIcon from '../css/images/search.png';
 import Search from '../images/searchIcon.svg';
 import Profile from '../images/profileIcon.svg';
 import '../css/Header.css';
+import homeBeige from "../images/homeBeige.png";
 
 export default function Header() {
   const [showBar, setShowBar] = useState(false);
   const history = useHistory();
   const location = useLocation();
   const path = location.pathname;
-  const pathSearch = path === '/meals' || path === '/drinks';
-  // let pageTitle = '';
-
-  // if (path === '/meals') {
-  //   pageTitle = 'Meals';
-  // } else if (path === '/drinks') {
-  //   pageTitle = 'Drinks';
-  // } else if (path === '/profile') {
-  //   pageTitle = 'Profile';
-  // } else if (path === '/done-recipes') {
-  //   pageTitle = 'Done Recipes';
-  // } else if (path === '/favorite-recipes') {
-  //   pageTitle = 'Favorite Recipes';
-  // }
+  const pathSearch = path === '/meals';
+  const header2 = !pathSearch
 
   return (
     <>
@@ -40,6 +29,11 @@ export default function Header() {
           <h3 className="subtitle_header">app</h3>
         </div>
         <div className="header__icons">
+          { header2 && (
+            <button onClick={() => history.push("/meals")}>
+            <img src={homeBeige} alt="homepage" className="homeBtn2"/>
+          </button>
+          )}
           <button
             onClick={ () => history.push('/profile') }
             data-testid="profile-top-btn"
@@ -63,11 +57,6 @@ export default function Header() {
         </div>
       </header>
       <section className="header__search">
-        {/* <div className="page__title">
-          { path === '/meals' && <img src={ MealIcon } alt="meal-icon" /> }
-          { path === '/drinks' && <img src={ DrinkIcon } alt="meal-icon" />}
-          <h1 data-testid="page-title">{pageTitle}</h1>
-        </div> */}
         { showBar && <SearchBar /> }
       </section>
     </>
