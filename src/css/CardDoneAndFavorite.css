@@ -19,7 +19,7 @@ h2 {
   margin-top: 10px;
 }
 
-h3 {
+.card__done__favorite h3 {
   display: inline;
   font-size: 18px;
 }

@@ -54,15 +54,16 @@
 .subtitle {
   font-family: AlexBrush, sans-serif;
   font-size: 80px;
-  padding-left: 200px;
-  padding-top: 135px;
+  font-weight: 400;
+  padding: 110px 0 0 190px;
   position: absolute;
   transform: rotate(-3deg);
 }
 
 .login__container {
   align-items: center;
-  background-image: url("../css/images/postit-login.webp");background-repeat: no-repeat;
+  background-image: url("../css/images/postit-login.webp");
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   display: flex;
@@ -86,7 +87,7 @@
 
 .login__input input {
   border: none;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border-radius: 20px;
   padding-left: 20px;
   height: 50px;
@@ -102,7 +103,7 @@
   background-color: var(--titleColor);
   border: none;
   border-radius: 20px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   color: #e8e8e8;
   font-size: 25px;
   font-weight: 700;
@@ -126,15 +127,42 @@
 }
 
 .footer-login {
-  background-color: #D28C52;
+  background-color: #d28c52;
   color: white;
   bottom: 0;
   font-size: 15px;
   font-weight: 600;
   left: 0;
   margin-top: 1rem;
-  padding: 3px 0;
+  padding-top: 3px;
   position: fixed;
   text-align: center;
   width: 100%;
+}
+
+@media (max-width: 850px) {
+  .login__container {
+    background-image: none;
+    transform: rotate(-7deg);
+    margin-left: -20px;
+  }
+
+  .login__title {
+    margin-top: -40px;
+    right: 15px;
+  }
+
+  .title img {
+    margin: 0 0 -40px 0;
+    height: 60px;
+  }
+
+  .title h1 {
+    font-size: 100px;
+  }
+
+  .subtitle {
+    padding: 75px 0 0 140px;
+    font-size: 60px;
+  }
 }

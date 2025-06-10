@@ -26,13 +26,13 @@ export default function Login() {
 
   return (
     <div className="login__page">
-        <div className="login__title">
-          <div className="title">
-            <img src={platter} alt="platter" />
-            <h1>Recipes</h1>
-          </div>
-          <h3 className="subtitle">app</h3>
+      <div className="login__title">
+        <div className="title">
+          <img src={platter} alt="platter" />
+          <h1>Recipes</h1>
+          <p className="subtitle">app</p>
         </div>
+      </div>
       <div className="login__container">
         <div className="login__input">
           <input
@@ -53,7 +53,7 @@ export default function Login() {
 
           <button
             data-testid="login-submit-btn"
-            disabled={ verifyForm() }
+            disabled={verifyForm()}
             onClick={goToRecipes}
             className="login__button"
           >
