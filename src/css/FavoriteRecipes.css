@@ -9,3 +9,9 @@
   align-items: center;
   min-height: 100vh;
 }
+
+.favoriteCBtn {
+  align-self: center;
+  margin: 10px 0 0;
+  width: 50%;
+}

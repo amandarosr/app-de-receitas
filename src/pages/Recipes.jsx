@@ -45,7 +45,7 @@ export default function Recipes() {
     setRecipes(filter);
   };
 
-  const maxNumber = 14;
+  const maxNumber = 21;
   const listRecipes = recipes && recipes.slice(0, maxNumber);
 
   return (

@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import { Link, useLocation } from "react-router-dom/cjs/react-router-dom.min";
 import "../css/CardDoneAndFavorite.css";
-import ButtonShare from "./ButtonShare";
+// import ButtonShare from "./ButtonShare";
 
 export default function CardDoneAndFavorite({ indexRecipe, recipe }) {
   const {
@@ -19,7 +19,7 @@ export default function CardDoneAndFavorite({ indexRecipe, recipe }) {
 
   return (
     <div className={pathname === "/done-recipes" ? "card__done__favorite" : ""}>
-      <Link to={`/${type}s/${Number(id)}`}>
+      <Link className="doneFavCLink" to={`/${type}s/${Number(id)}`}>
         <img
           src={image}
           alt={image}
@@ -35,21 +35,21 @@ export default function CardDoneAndFavorite({ indexRecipe, recipe }) {
         <>
           <div>
             {tags.map((tag) => (
-              <button
+              <h3
                 data-testid={`${indexRecipe}-${tag}-horizontal-tag`}
                 key={tag}
               >
                 {tag}
-              </button>
+              </h3>
             ))}
           </div>
         </>
       )}
-      <ButtonShare
+      {/* <ButtonShare
         testid={`${indexRecipe}-horizontal-share-btn`}
         typeRecipe={type}
         idRecipe={id}
-      />
+      /> */}
     </div>
   );
 }

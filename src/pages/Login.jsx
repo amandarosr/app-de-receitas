@@ -21,7 +21,7 @@ export default function Login() {
 
   const goToRecipes = () => {
     localStorage.setItem("user", JSON.stringify({ email }));
-    history.push("/drinks");
+    history.push("/meals");
   };
 
   return (

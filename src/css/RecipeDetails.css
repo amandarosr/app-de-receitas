@@ -22,17 +22,11 @@
   margin-top: 10px;
 }
 
-.push-pin {
-  left: 45px;
-  position: absolute;
-  top: 10px;
-}
-
-.carousel-container {
+/* .carousel-container {
   margin-left: 10px;
   position: relative;
   top: -230px;
-}
+} */
 
 .card-slider {
   background: #f8f3e8;
@@ -44,6 +38,7 @@
 }
 
 .start {
-  bottom: 0;
+  bottom: 15px;
   position: fixed;
+  z-index: 2;
 }

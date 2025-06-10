@@ -9,3 +9,20 @@
   align-items: center;
   min-height: 100vh;
 }
+
+.doneFav-div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 20px 0;
+  width: 80%;
+}
+
+.card__done__favorite {
+  box-shadow: 0 0 10px rgba(75, 2, 2, 0.4) , 0 0 2px rgba(105, 9, 9, 0.4);
+  margin:  20px;
+}
+
+.doneFavCLink {
+  color: brown;
+}

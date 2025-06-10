@@ -1,8 +1,9 @@
 @font-face {
-  font-family: Delius-Regular;
-  src: url("./images/Delius-Regular.ttf");
+  font-family: TestFont;
+  src: url("./images/SERMORegular.ttf");
 }
 
 * {
-  font-family: Delius , cursive;
+  font-family: TestFont;
+  font-weight: 600;
 }

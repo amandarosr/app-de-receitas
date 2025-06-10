@@ -35,6 +35,7 @@ export default function FavoriteRecipes() {
             data-testid={ `${index}-horizontal-favorite-btn` }
             onClick={ () => disfavorRecipe(favoriteRecipe.id) }
             src={ blackHeartIcon }
+            className="favoriteCBtn"
           >
             <img
               src={ blackHeartIcon }
