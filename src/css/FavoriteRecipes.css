@@ -1,7 +1,17 @@
 .favorites__page {
-  background-image: url('../css/images/backgroundDetails.jpg');
-  background-size: contain;
+  background-image: url("../css/images/torn-beige-paper2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.favoriteCBtn {
+  align-self: center;
+  margin: 10px 0 0;
+  width: 50%;
 }

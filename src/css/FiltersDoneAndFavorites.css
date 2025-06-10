@@ -7,3 +7,9 @@
 .filters-container button {
   margin: 15px 3px 25px;
 }
+
+.cardTags {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+}

@@ -1,5 +1,5 @@
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import React, { useCallback, useContext, useEffect } from 'react';
+import { useCallback, useContext, useEffect } from 'react';
 import {
   useHistory,
   useLocation, useParams,
@@ -7,11 +7,10 @@ import {
 import ButtonFavorite from '../components/ButtonFavorite';
 import ButtonShare from '../components/ButtonShare';
 import CardRecipeDetails from '../components/CardRecipeDetails';
-import Carrousel from '../components/Carrousel';
 import RecipeContext from '../context/RecipeContext';
 import '../css/RecipeDetails.css';
 import { fetchDrinks, fetchMeals } from '../services/fetchAPI';
-import PushPin from '../css/images/doodles/push-pins.png';
+import home from "../images/home.png"
 
 export default function RecipeDetails() {
   const { setRecomended } = useContext(RecipeContext);
@@ -44,12 +43,13 @@ export default function RecipeDetails() {
     <div className="details__page">
       <div className="mobile-container">
         <span className="top-btns-container">
-          <img src={ PushPin } alt="pin" className="push-pin" />
+          <button onClick={() => history.push("/meals")}>
+            <img src={home} alt="homepage" className="homeBtn"/>
+          </button>
           <ButtonFavorite />
           <ButtonShare testid="share-btn" />
         </span>
         <CardRecipeDetails />
-        <Carrousel />
         <button
           data-testid="start-recipe-btn"
           type="button"

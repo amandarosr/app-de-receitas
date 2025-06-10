@@ -1,6 +1,6 @@
 @font-face {
   font-family: AlexBrush;
-  src: url('../images/AlexBrush-Regular.ttf') format('truetype');
+  src: url("../images/AlexBrush-Regular.ttf") format("truetype");
 }
 
 .crossed {
@@ -12,21 +12,18 @@
   display: flex;
   flex-direction: column;
   max-width: 90%;
-  padding: 0 0 2rem;
+  padding-bottom: 2rem;
 }
 
 .details-title {
-  margin: 35px 0 35px 15px;
   text-align: center;
-  width: 95%;
 }
 
 .details-title h1 {
-  color: rgb(180, 33, 33);
-  font-family: AlexBrush , sans-serif;
+  color: brown;
   font-size: 48px;
-  font-weight: 500;
-  text-shadow: 2px 2px 1px white;
+  font-weight: 600;
+  text-shadow: 2px 2px 1px #cbbca2;
 }
 
 .details-title p {
@@ -35,29 +32,12 @@
   top: -10px;
 }
 
-.section-one {
-  max-width: 100%;
-  position: relative;
-  top: -65px;
-}
-
-.tape {
-  filter: contrast(250%) drop-shadow(1px 1px 1px rgb(192, 158, 108));
-  height: 85px;
-  left: 5px;
-  margin-right: 300px;
-  position: relative;
-  top: 70px;
-  transform: rotate(95deg);
-  z-index: 2;
-}
-
 .mainPic {
   background: rgb(255, 254, 249);
-  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2) , 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.2);
   float: left;
   height: 210px;
-  margin: 0 15px 2px 30px;
+  margin: 10px 30px;
   padding: 15px;
   padding-bottom: 45px;
   transform: rotate(-2deg);
@@ -65,64 +45,47 @@
 }
 
 .instructions {
-  font-size: 17px;
-  margin-left: 16%;
-  margin-right: 1%;
+  font-size: 18px;
   text-align: justify;
-  width: 73%;
 }
 
 .section-two {
-  max-width: 100%;
-  position: relative;
-  top: -65px;
-}
-
-.bulb-icon {
-  margin-bottom: 15px;
-  margin-left: 230px;
-  transform: rotate(20deg);
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  align-items: center;
+  margin: 50px 0;
 }
 
 .ingredients-container {
   display: flex;
   flex-direction: column;
-  font-size: 18px;
-  list-style: inside decimal;
-  margin-left: 8%;
+  font-size: 21px;
+  list-style: inside;
   text-align: start;
-  width: 80%;
+  margin-bottom: 30px;
 }
 
 .progress-checkbox {
-  accent-color: #af1111;
+  accent-color: brown;
   cursor: pointer;
   height: 1em;
   margin-right: 8px;
-  position: relative;
-  top: -5px;
   vertical-align: middle;
   width: 1em;
 }
 
 .section-three {
-  margin-right: 20px;
-  margin-top: 20px;
-  max-width: 100%;
+  margin: 0;
 }
 
-.video-border {
-  bottom: 250px;
-  filter: sepia(100%);
-  height: 280px;
-  margin-left: 23px;
-  position: relative;
-  z-index: 0;
-}
+@media (max-width: 850px) {
+  .instructions {
+    font-size: 16px;
+    margin: 0 20px;
+  }
 
-.laptop {
-  bottom: 255px;
-  left: -95px;
-  position: relative;
-  transform: rotateY(180deg);
+  .section-three {
+    margin: 30px 0 0 -30px;
+  }
 }

@@ -8,7 +8,6 @@ import ButtonShare from '../components/ButtonShare';
 import CardRecipeDetails from '../components/CardRecipeDetails';
 import RecipeContext from '../context/RecipeContext';
 import '../css/RecipeInProgress.css';
-import Coffee from '../css/images/doodles/coffee.png';
 
 export default function RecipeInProgress() {
   const { allChecked, recipe } = useContext(RecipeContext);
@@ -51,7 +50,6 @@ export default function RecipeInProgress() {
     <div className="in-progress_page">
       <div className="mobile-container">
         <div className="top-btns-container">
-          <img src={ Coffee } alt="coffee-icon" className="coffee" />
           <ButtonFavorite />
           <ButtonShare testid="share-btn" />
         </div>
@@ -60,6 +58,7 @@ export default function RecipeInProgress() {
           data-testid="finish-recipe-btn"
           disabled={ !allChecked }
           onClick={ finishRecipe }
+          className="finishBtn"
         >
           Finish Recipe
         </button>

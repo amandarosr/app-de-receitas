@@ -7,9 +7,6 @@ export const fetchMeals = async (type, search) => {
   case 'name':
     url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`;
     break;
-  case 'first-letter':
-    url = `https://www.themealdb.com/api/json/v1/1/search.php?f=${search}`;
-    break;
   default:
     url = 'https://www.themealdb.com/api/json/v1/1/search.php?s=';
   }

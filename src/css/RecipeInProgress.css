@@ -1,16 +1,18 @@
 .in-progress_page {
   align-items: center;
-  backdrop-filter: blur(5px);
-  background-image: url('../css/images/backgroundDetails.jpg');
-  background-size: contain;
+  background-image: url('../css/images/torn-beige-paper.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 100%;
 }
 
-.coffee {
-  left: 45px;
-  position: absolute;
-  top: 10px;
+.finishBtn {
+  position: fixed;
+  bottom: 15px;
+  z-index: 2;
 }
+

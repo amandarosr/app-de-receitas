@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
-import Footer from '../components/Footer';
+// import Footer from '../components/Footer';
 import Header from '../components/Header';
 import '../css/Profile.css';
 
@@ -47,7 +47,9 @@ export default function Profile() {
           </button>
         </div>
       </main>
-      <Footer />
+      <footer className="footer-login">
+        <span>Copyright © Recipes App | All Rights Reserved</span>
+      </footer>
     </div>
   );
 }

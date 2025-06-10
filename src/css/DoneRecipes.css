@@ -1,11 +1,28 @@
 .done__page {
-  background-image: url('../css/images/backgroundDetails.jpg');
-  background-size: contain;
+  background-image: url("../css/images/torn-beige-paper2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.done__page h1:nth-child( 1 ) {
-  backdrop-filter: blur(1px);
+.doneFav-div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 50px 0 20px;
+  width: 80%;
+}
+
+.card__done__favorite {
+  box-shadow: 0 0 10px rgba(75, 2, 2, 0.4) , 0 0 2px rgba(105, 9, 9, 0.4);
+  margin: 20px;
+}
+
+.doneFavCLink {
+  color: brown;
 }
