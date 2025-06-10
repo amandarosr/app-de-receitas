@@ -9,26 +9,29 @@
   opacity: 0.9;
 }
 
-.profile__page h1:nth-child( 1 ) {
+.profile__page h1:nth-child(1) {
   backdrop-filter: blur(2px);
 }
 
 .user-info {
-  /* background-image: url("../css/images/post-it-note.png");
+  background-image: url("../css/images/strip-paper.png");
   background-size: contain;
-  background-position: 30%;
-  background-repeat: no-repeat; */
+  background-position-x: 50%;
+  filter: sepia(30%);
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
-  height: 250px;
+  height: 350px;
+  width: 600px;
+  margin: 20px 0 -45px;
 }
 
 .profile-subtitle {
   color: #4a1a1a;
   float: right;
+  margin-top: -30px;
   font-size: 28px;
   font-weight: 600;
 }
@@ -48,5 +51,18 @@
 }
 
 .profile-btns button {
-  margin: 0 3px;
+  margin: 3px;
+}
+
+@media (max-width: 850px) {
+  .user-info {
+    margin-top: 80px;
+    width: 100%;
+    height: 250px;
+    font-size: 25px;
+  }
+
+  .profile-subtitle, .profile-email {
+    font-size: 28px;
+  }
 }
