@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/recipes-app/static/css/main.784f02ed.css",
-    "main.js": "/recipes-app/static/js/main.8e387291.js",
+    "main.js": "/recipes-app/static/js/main.e34ae540.js",
     "static/media/torn-beige-paper.jpg": "/recipes-app/static/media/torn-beige-paper.635c780d8026295a64b1.jpg",
     "static/media/torn-beige-paper2.jpg": "/recipes-app/static/media/torn-beige-paper2.a0e58bcf1d5b51fdd9fb.jpg",
     "static/media/strip-paper.png": "/recipes-app/static/media/strip-paper.41239bd92126b4e36706.png",
@@ -17,10 +17,10 @@
     "static/media/postit-login.webp": "/recipes-app/static/media/postit-login.7b558accc238f406d16c.webp",
     "index.html": "/recipes-app/index.html",
     "main.784f02ed.css.map": "/recipes-app/static/css/main.784f02ed.css.map",
-    "main.8e387291.js.map": "/recipes-app/static/js/main.8e387291.js.map"
+    "main.e34ae540.js.map": "/recipes-app/static/js/main.e34ae540.js.map"
   },
   "entrypoints": [
     "static/css/main.784f02ed.css",
-    "static/js/main.8e387291.js"
+    "static/js/main.e34ae540.js"
   ]
 }
